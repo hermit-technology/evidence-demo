@@ -38,3 +38,7 @@
     "axios": "^1.7.4"
   }
 }
+
+"scripts": {
+  "build": "EVIDENCE_BUILD_DIR=./build/evidence-demo evidence build",
+}
