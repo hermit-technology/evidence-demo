@@ -45,12 +45,16 @@ title: Welcome to Evidence
     series=category
 />
 
-## What's Next?
-- [Connect your data sources](settings)
-- Edit/add markdown files in the `pages` folder
-- Deploy your project with [Evidence Cloud](https://evidence.dev/cloud)
+```sql orders_by_state
+select 
+  sum(sales) as total_sales,
+  state
+from needful_things.orders
+group by state
+```
 
-## Get Support
-- Message us on [Slack](https://slack.evidence.dev/)
-- Read the [Docs](https://docs.evidence.dev/)
-- Open an issue on [Github](https://github.com/evidence-dev/evidence)
+<USMap
+    data={orders_by_state}
+    state=state
+    value=total_sales
+/>
