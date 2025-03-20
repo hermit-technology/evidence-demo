@@ -1,11 +1,10 @@
 ---
-title: Welcome to Evidence
+title: Evidence Demo
 ---
 
-<Details title='How to edit this page'>
+This application demonstrates how you can write raw SQL queries in Evidence and get nice, performant data visualization, along with CI. For an example of how easy this is, you can see the commit that created the map of the US [here.](https://github.com/hermit-technology/evidence-demo/commit/4b8d9f07f2e488b8a9356d2e8193536209c544c9)
 
-  This page can be found in your project at `/pages/index.md`. Make a change to the markdown file and save it to see the change take effect in your browser.
-</Details>
+As far as we know, no other visualization tool supports real CI/CD, the ability to potentially embed artefacts directly in other websites, or the ability to know if a dependency is broken (upstream teams can try to build this project with the `--strict` flag as a smoke test before pushing changes to database schemas, etc.)
 
 ```sql categories
   select
